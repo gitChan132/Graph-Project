@@ -2,6 +2,24 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+class Node {
+    private:
+        std::string name;
+        int id;
+        int data;
+        Node* next;
+    public:
+        Node(Node* next){
+            this->next = next;
+        }        
+        
+};
+
+
+
+
+
+
 class Application {
 private:
     const unsigned int width = 1000;
